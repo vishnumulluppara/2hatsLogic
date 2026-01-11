@@ -1,0 +1,150 @@
+//PLUGIN
+.select2-container
+    z-index: 9999
+
+.select2-dropdown
+    min-width: 175px
+    border: none !important
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .16)
+    border-radius: 5px !important
+    overflow: hidden
+    background-color: rgba(255, 255, 255, .97) !important
+
+.select2
+    height: 40px !important
+    background: transparent !important
+    border-radius: 7px !important
+    font-weight: 400 !important
+    display: flex !important
+    align-items: center !important
+    width: 100% !important
+    color: #FFFFFF !important
+    border: 1px solid #999999 !important
+    font-size: 14px
+    @media only screen and (min-width: 578px)
+        height: 45px !important
+        padding: 5px 20px !important
+    @media only screen and (min-width: 992px)
+        border-radius: 14px !important
+        padding: 5px 25px !important
+        height: 50px !important
+    @media only screen and (min-width: 1441px)
+        font-size: 16px
+    @media only screen and (min-width: 1441px)
+        font-size: 18px
+        height: 60px !important
+    &::placeholder
+        font-size: 18px !important
+        color: #c2c2c2 !important
+        font-weight: 400 !important
+
+.selection
+    width: 100% !important
+.select2-selection__rendered
+    width: 100%
+    color: rgba(29, 29, 29,0.7) !important
+    font-weight: 500 !important
+    font-size: 13px
+    padding: 5px 15px 15px !important
+    @media only screen and (min-width: 576px)
+        font-size: 14px
+        height: 40px
+        padding: 5px 0px 15px !important
+    @media only screen and (min-width: 992px)
+        font-size: 15px
+    @media only screen and (min-width: 1351px)
+        padding: 3px 0 15px !important
+    @media only screen and (min-width: 1441px)
+        font-size: 18px
+.select2-results__options
+    max-height: 200px
+    overflow-y: auto
+.select2-results__option
+    padding: 7px 0px !important
+    border-bottom: 1px solid #ffffff5c !important
+    font-size: 14px !important
+    color: #ffffff !important
+    font-size: 13px
+    display: flex !important
+    align-items: center !important
+
+    @media only screen and (min-width: 576px)
+        font-size: 14px
+        height: 40px
+        padding: 5px 20px !important
+    @media only screen and (min-width: 992px)
+        font-size: 15px
+        padding: 5px 25px !important
+    @media only screen and (min-width: 1441px)
+        font-size: 18px
+    &.select2-results__option--selected
+        background: $basecolor
+        color: $white
+.select2-selection__arrow
+    background: url(../images/DownArrow.svg) no-repeat
+    background-size: contain
+    width: 12px
+    height: 9px
+    position: absolute
+    right: 10px
+    top: 0px
+    bottom: 0
+    margin: auto
+    @media only screen and (min-width: 992px)
+        width: 17px
+        right: 25px
+
+.select2-dropdown
+    background-color: $hover !important
+    border: 1px solid #aaa
+    border-radius: 0px !important
+    box-sizing: border-box
+    display: block
+    position: absolute
+    left: -100000px
+    width: 100%
+    z-index: 1051
+    top: 2px
+    color: $white !important
+    padding: 5px !important
+
+.owl-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 25px
+    @media only screen and (min-width: 468px)
+        margin-top: 33px
+    @media only screen and (min-width: 1200px)
+        margin-top: 45px
+    button
+        border-radius: 50%
+        background: #D9D9D9 !important
+        width: 10px
+        height: 10px
+        transition: all .3s
+        font-size: 0
+        padding: 0
+        border: none
+        outline: none
+        box-shadow: none
+        margin: 0 8px
+        @media only screen and (min-width: 1551px)
+            margin: 0 14px
+            width: 12px
+            height: 12px
+
+        span
+            display: none
+        &.active
+            background: $basecolor !important
+            opacity: 1
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            @media only screen and (min-width: 1200px)
+                width: 14px
+                height: 14px
+            @media only screen and (min-width: 1551px)
+                width: 17px
+                height: 17px

@@ -1,0 +1,128 @@
+// layout
+#viewport
+    overflow: hidden
+// BUTTON STYLE
+.hoveranim
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        z-index: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        background: $basecolor
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
+        transform: scaleX(0)
+        -webkit-transition: -webkit-transform 0.3s ease
+        transition: -webkit-transform 0.3s ease
+        transition: transform 0.3s ease
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease
+        left: 0
+        -webkit-transform-origin: right
+        -ms-transform-origin: right
+        transform-origin: right
+    span
+        position: relative
+        z-index: 1
+        transition: .4s all
+    &:hover
+        color: #fff
+        &::before
+            -webkit-transform-origin: left
+            -ms-transform-origin: left
+            transform-origin: left
+            -webkit-transform: scaleX(1)
+            -ms-transform: scaleX(1)
+            transform: scaleX(1)
+        span
+            color: #fff
+
+.mainHead
+    margin-bottom: 15px
+    @media only screen and (min-width:1200px)
+        margin-bottom: 20px
+    @media only screen and (min-width:1351px)
+        margin-bottom: 25px
+    @media only screen and (min-width:1441px)
+        margin-bottom: 30px
+    &.center
+        text-align: center
+    .title
+        font-weight: 700
+        color: #111010
+        position: relative
+        font-size: 26px
+        width: fit-content
+        margin: auto 
+        padding-bottom: 15px
+        margin-bottom: 15px
+        @media only screen and (min-width:992px)
+            font-size: 30px
+            margin-bottom: 20px
+        @media only screen and (min-width:1200px)
+            font-size: 35px
+            padding-bottom: 20px
+            margin-bottom: 25px
+        @media only screen and (min-width:1351px)
+            font-size: 40px
+        @media only screen and (min-width:1441px)
+            font-size: 48px
+            margin-bottom: 30px
+
+        &.white
+            color: $white
+        &::after
+            position: absolute
+            content: ""
+            bottom: 0
+            left: 0
+            right: 0
+            width: 85%
+            margin: auto
+            height: 2px
+            background: #C4C4C4
+            @media only screen and (min-width:1200px)
+                height: 4px
+
+        p
+            &.white
+                color: $white
+
+    .tagLine
+        color: #616161
+        font-weight: 300
+        font-size: 14px
+        line-height: 1.7
+        max-width: 550px
+        margin: auto
+        @media only screen and (min-width:1200px)
+            font-size: 16px
+        @media only screen and (min-width:1351px)
+            font-size: 18px
+            max-width: 650px
+        @media only screen and (min-width:1441px)
+            font-size: 20px
+            max-width: 820px
+.cmnBtn
+    width: fit-content
+    background: $white
+    color: $black
+    font-size: 14px
+    font-weight: 700
+    padding: 0 10px
+    min-width: 135px
+    height: 40px
+    @include center
+    @media only screen and (min-width: 1200px)
+        height: 45px
+        min-width: 155px
+    @media only screen and (min-width: 1441px)
+        min-width: 175px
+        height: 50px
+        font-size: 16px

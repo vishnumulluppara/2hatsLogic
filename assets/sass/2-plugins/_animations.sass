@@ -1,0 +1,316 @@
+//ANIMATIONS
+@keyframes fadeInDown
+    0%
+        opacity: 0
+        transform: translate3d(0, -100%, 0)
+
+    100%
+        opacity: 1
+        transform: translate3d(0, 0, 0)
+
+@-webkit-keyframes pulse
+    0% 
+         -webkit-box-shadow: 0 0 0 0 rgba(231, 21, 31, .4)
+
+    70% 
+        -webkit-box-shadow: 0 0 0 10px rgba(231, 21, 31, 0)
+
+    100% 
+        -webkit-box-shadow: 0 0 0 0 rgba(231, 21, 31, 0)
+
+@keyframes pulse
+    0%
+        -moz-box-shadow: 0 0 0 0 rgba(231, 21, 31, .4)
+        box-shadow: 0 0 0 0 rgba(231, 21, 31, .4)
+
+    70%
+        -moz-box-shadow: 0 0 0 10px rgba(231, 21, 31, 0)
+        box-shadow: 0 0 0 10px rgba(231, 21, 31, 0)
+
+    100%
+        -moz-box-shadow: 0 0 0 0 rgba(231, 21, 31, 0)
+        box-shadow: 0 0 0 0 rgba(231, 21, 31, 0)
+
+@keyframes fade-in
+    100%
+        opacity: 1
+        filter: blur(0)
+@keyframes scale
+    100%
+        transform: scale(1)
+
+@keyframes toTopFromBottom
+    49%
+        transform: translateY(-100%)
+
+    50%
+        opacity: 0
+        transform: translateY(100%)
+
+    51%
+        opacity: 1
+
+@-webkit-keyframes shine
+    100% 
+        left: 125%
+
+@keyframes flash
+    0%
+        opacity: .4
+
+    100%
+        opacity: 1
+
+@-webkit-keyframes flash
+    0% 
+        opacity: .4
+
+    100% 
+        opacity: 1
+
+@keyframes Reveel
+
+    0%
+        opacity: 0
+
+    25%
+        opacity: .25
+
+    50%
+        opacity: .5
+
+    75%
+        opacity: .75
+
+    100%
+        opacity: 1
+
+@keyframes rotation
+    from
+        -webkit-transform: rotate(0deg)
+
+    to
+        -webkit-transform: rotate(359deg)
+
+@keyframes anim-popoutin
+    0%
+        transform: scale(0)
+        opacity: 0
+        filter: drop-shadow(0 0 0 rgba(235, 179, 48, 0))
+
+    25%
+        transform: scale(1)
+        opacity: 1
+        filter: drop-shadow(3px 10px 5px rgba(235, 179, 48, .50))
+
+    100%
+        transform: scale(1)
+        opacity: 1
+        filter: drop-shadow(1px 0 0 rgba(235, 179, 48, 0))
+@keyframes anim-popoutin1
+    0%
+        transform: scale(0)
+        opacity: 0
+        filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0))
+
+    25%
+        transform: scale(1)
+        opacity: 1
+        filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.502))
+
+    100%
+        transform: scale(1)
+        opacity: 1
+        filter: drop-shadow(1px 0 0 rgba(0, 0, 0, 0))
+
+@keyframes textclip
+    100%
+        background-position: 200% center
+
+@keyframes toTopFromBottom
+    49%
+        transform: translateY(-100%)
+
+    50%
+        opacity: 0
+        transform: translateY(100%)
+
+    51%
+        opacity: 1
+
+@keyframes pulse-me
+    0%
+        transform: scale(0.5)
+        opacity: 0
+
+    50%
+        opacity: 1
+
+    70%
+        opacity: 1
+
+    100%
+        transform: scale(1)
+        opacity: 0
+@keyframes toTopFromBottom
+    49%
+        transform: translateY(-100%)
+
+    50%
+        opacity: 0
+        transform: translateY(100%)
+
+    51%
+        opacity: 1
+
+@keyframes flying
+    0% ,100%
+        transform: translate(0%, 0%)
+
+    25%
+        transform: translate(45%, 35%)
+
+    50%
+        transform: translate(70%, 27%)
+
+    75%
+        transform: translate(12%, 80%)
+
+@keyframes dipBranch3
+    0%
+        transform: translateZ(0px) translateY(0) translateX(0) skewY(0deg) rotate3d(0, 0, 0, 0deg)
+
+    50%
+        transform: translateZ(2px) translateY(2px) translateX(2px) skewY(-2deg) rotate3d(1, 1, 1, 5deg) rotate(10deg)
+
+    100%
+        transform: translateZ(0px) translateY(0) translateX(0) skewY(0deg) rotate3d(0, 0, 0, 0deg)
+
+@keyframes dipBranch2
+    0%
+        transform: translateZ(0px) translateY(0) translateX(0) skewY(0deg) rotate3d(0, 0, 0, 0deg) scale(1)
+
+    50%
+        transform: translateZ(2px) translateY(2px) translateX(2px) skewY(-2deg) rotate3d(1, 1, 1, 5deg) rotate(10deg) scale(1.1)
+
+    100%
+        transform: translateZ(0px) translateY(0) translateX(0) skewY(0deg) rotate3d(0, 0, 0, 0deg) scale(1)
+
+@keyframes dash
+    to
+        stroke-dashoffset: 0
+
+@keyframes gradient
+    0%
+        background-position: 0% 50%
+
+    50%
+        background-position: 100% 50%
+
+    100%
+        background-position: 0% 50%
+
+@keyframes toTopFromBottom
+    49%
+        transform: translate(10%, -100%)
+
+    50%
+        opacity: 0
+        transform: translate(0%, 100%)
+
+    51%
+        opacity: 1
+
+@keyframes fadeInDown
+    0%
+        opacity: 0
+        transform: translate3d(0, -50%, 0)
+    100%
+        opacity: 1
+        transform: translate3d(0, 0, 0)
+
+@keyframes flip
+    0%
+        transform: rotateY(180deg)
+
+    100%
+        transform: rotateY(0deg)
+
+@keyframes showcontent
+    from
+        opacity: 0
+        transform: translate(0,100px)
+        filter: blur(33px)
+    to
+        opacity: 1
+        transform: translate(0,0)
+        filter: blur(0)
+
+@keyframes swinging
+    0%
+        transform: translateX(-50%) rotate(3deg)
+    50%
+        transform: translateX(-50%) rotate(-3deg)
+    100%
+        transform: translateX(-50%) rotate(3deg)
+
+@keyframes animationFramesOne
+    0%
+        transform: translate(0px, 0px) rotate(0deg)
+
+    20%
+        transform: translate(73px, -1px) rotate(36deg)
+
+    40%
+        transform: translate(141px, 72px) rotate(72deg)
+
+    60%
+        transform: translate(83px, 122px) rotate(108deg)
+
+    80%
+        transform: translate(-40px, 72px) rotate(144deg)
+
+    100%
+        transform: translate(0px, 0px) rotate(0deg)
+
+@keyframes animationFramesUp
+    0%
+        transform: translate(0px, 0px) rotate(0deg) scale(1)
+
+    20%
+        transform: translate(73px, -1px) rotate(36deg) scale(0.9)
+
+    40%
+        transform: translate(141px, -72px) rotate(72deg) scale(1)
+
+    60%
+        transform: translate(83px, -122px) rotate(108deg) scale(1.2)
+
+    80%
+        transform: translate(-40px, -72px) rotate(144deg) scale(1.1)
+
+    100%
+        transform: translate(0px, 0px) rotate(0deg) scale(1)
+
+@keyframes jump
+    0%
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+
+    40%
+        -webkit-transform: translate3d(0, 50%, 0)
+        transform: translate3d(0, 50%, 0)
+
+    100%
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+        
+@keyframes animate
+    0%
+        box-shadow: 0 0 0 0 #fff
+
+    50%
+        box-shadow: 0 0 0 20px rgba(255,255,255,0)
+
+    100%
+        box-shadow: 0 0 0 rgba(255,255,255,0)
