@@ -295,9 +295,13 @@ body
                         @media only screen and (min-width:992px)
                             width: 21px
                             height: 21px
+                        &:hover
+                            transform: scale(0.9)
+                            stroke: $basecolor !important
                         svg
                             transition: all 0.5s
                             fill: $black
+                            stroke: $black
                             @include imgFit
 
     // MENU BOX (Mobile)
