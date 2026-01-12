@@ -186,60 +186,60 @@
 
 
     <script>
-    // new WOW().init();
+        // new WOW().init();
 
-    $("#MainBanner").swipe({
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (direction == 'left') $(this).carousel('next');
-            if (direction == 'right') $(this).carousel('prev');
-        },
-        allowPageScroll: "vertical"
-    })
-
-
-    var projectSlider = new Swiper(".projectSlider", {
-        slidesPerView: 1,
-        watchSlidesProgress: true,
-
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        observer: true,
-        observeParents: true,
-        breakpoints: {
-            358: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-
+        $("#MainBanner").swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
             },
-            578: {
-                slidesPerView: 3,
-                spaceBetween: 10,
+            allowPageScroll: "vertical"
+        })
 
-            },
-            768: {
-                slidesPerView: 4,
-                spaceBetween: 15,
 
-            },
-            1200: {
-                slidesPerView: 4,
-                spaceBetween: 20,
+        var projectSlider = new Swiper(".projectSlider", {
+            slidesPerView: 1,
+            watchSlidesProgress: true,
 
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            1661: {
-                slidesPerView: 4,
-                spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            observer: true,
+            observeParents: true,
+            breakpoints: {
+                358: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
 
+                },
+                578: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+
+                },
+                1661: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+
+                },
             },
-        },
-    });
+        });
     </script>
 
 
